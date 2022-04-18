@@ -29,6 +29,5 @@ button:hover{
     width: 99%;
     height: 400px; 
     margin-left: 2px;
-    border: 1px solid black; 
     overflow-y: scroll;
 }
