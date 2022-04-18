@@ -16,3 +16,7 @@ header{
     font-size: 1em;
     font-family:'Courier New', Courier, monospace ;
 }
+
+button{
+    font-family: Lato, sans-serif;
+}
