@@ -67,3 +67,7 @@ button:hover{
     font-weight: bold;
     margin-left: 5px;
 }
+
+#connect{
+    width: 18%;
+}
