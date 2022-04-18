@@ -24,3 +24,10 @@ button{
 button:hover{
     box-shadow: 0 3px 13px 1px  rgb(39, 38, 38);
 }
+
+#chat{
+    width: 500px; 
+    height: 400px; 
+    border: 1px solid black; 
+    overflow-y: scroll;
+}
