@@ -1,4 +1,5 @@
 .contenedor{
     width: 500px;
-    height: 530px; 
+    height: 530px;
+    border-radius: 10px;
 }
