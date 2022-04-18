@@ -45,4 +45,5 @@ button:hover{
     width: 85%;
     margin: 0 2px;
     border-radius: 10px;
+    background-color: rgb(255, 255, 255);
 }
