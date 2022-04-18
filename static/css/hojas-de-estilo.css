@@ -55,3 +55,9 @@ button:hover{
     width: 15%;
     margin-right: 2px;
 }
+
+.usuario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
