@@ -76,3 +76,7 @@ button:hover{
     width: 18%;
     margin-right: 2px;
 }
+
+#username{
+    width: 33%;
+}
