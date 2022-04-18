@@ -19,6 +19,7 @@ header{
 
 button{
     font-family: Lato, sans-serif;
+    border-radius: 10px;
 }
 
 button:hover{
