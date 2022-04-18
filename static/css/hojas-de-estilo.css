@@ -62,3 +62,7 @@ button:hover{
     align-items: center;
     margin-top: 3px;
 }
+
+.usuario p{
+    font-weight: bold;
+}
