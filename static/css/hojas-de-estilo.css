@@ -40,3 +40,7 @@ button:hover{
     display: flex;
     justify-content: space-between; 
 }
+
+#inp_message{
+    width: 85%;
+}
