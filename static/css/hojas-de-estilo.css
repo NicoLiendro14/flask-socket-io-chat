@@ -33,3 +33,7 @@ button:hover{
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
 }
+
+.mensaje{
+    width: 100%;
+}
