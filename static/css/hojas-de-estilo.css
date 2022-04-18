@@ -13,4 +13,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1em;
+    font-family:'Courier New', Courier, monospace ;
 }
