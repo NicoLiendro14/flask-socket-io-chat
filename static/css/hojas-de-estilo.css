@@ -1,0 +1,84 @@
+.contenedor{
+    width: 500px;
+    height: 530px;
+    border-radius: 10px;
+    margin: 10% auto;
+    background-color: rgb(52, 191, 196);
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+button{
+    font-family: Lato, sans-serif;
+    border-radius: 10px;
+    background-color: rgb(255,255,255);
+}
+
+button:hover{
+    box-shadow: 0 3px 13px 1px  rgb(39, 38, 38);
+}
+
+#chat{
+    width: 99%;
+    height: 400px; 
+    margin-left: 2px;
+    overflow-y: scroll;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+
+.mensaje{
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+#inp_message{
+    width: 85%;
+    margin: 0 2px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 5px;
+}
+
+#send{
+    width: 15%;
+    margin-right: 2px;
+}
+
+.usuario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.usuario p{
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#connect{
+    width: 18%;
+}
+
+#disconnect{
+    width: 18%;
+    margin-right: 2px;
+}
+
+#username{
+    width: 33%;
+    border-radius: 10px;
+    padding-left: 5px;
+}
