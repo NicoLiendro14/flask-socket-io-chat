@@ -10,3 +10,8 @@
     border-radius: 10px;
     background-color: white;
 }
+
+.error{
+    margin: 50px auto;
+    display: block;
+}
