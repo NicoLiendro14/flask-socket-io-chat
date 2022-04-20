@@ -15,3 +15,10 @@
     margin: 50px auto;
     display: block;
 }
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-items: center;
+}
