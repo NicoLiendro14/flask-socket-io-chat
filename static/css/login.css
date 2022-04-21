@@ -51,4 +51,19 @@
 
 a{
     margin-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+a:active{
+    color: #3a3a3a;
+}
+
+a:visited{
+    color: #3a3a3a;
+}
+
+a:hover{
+    color: blue;
 }
