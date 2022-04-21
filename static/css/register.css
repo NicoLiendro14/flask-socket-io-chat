@@ -21,6 +21,10 @@ h1{
     margin-bottom: 25px;
 }
 
+.register-form-field::placeholder {
+    color: #3a3a3a;
+}
+
 .register-form-field {
     border: none;
     border-bottom: 1px solid #3a3a3a;
