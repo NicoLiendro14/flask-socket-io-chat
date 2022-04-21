@@ -26,3 +26,17 @@
     padding: 0px 0px 5px 5px;
     margin: 16px auto;
 }
+
+#login-form-submit {
+    width: 100%;
+    padding: 7px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+}
