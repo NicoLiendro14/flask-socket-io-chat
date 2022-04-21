@@ -48,3 +48,7 @@
     cursor: pointer;
     outline: none;
 }
+
+a{
+    margin-top: 10px;
+}
