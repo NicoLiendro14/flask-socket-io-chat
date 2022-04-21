@@ -15,6 +15,27 @@ h1{
     margin-bottom: 30px;
 }
 
+a{
+    align-self: flex-start;
+    margin-left: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:active{
+    color: #3a3a3a;
+}
+
+a:visited{
+    color: #3a3a3a;
+}
+
+a:hover{
+    color: blue;
+}
+
+
 #register-form{
     display: flex;
     flex-direction: column;
