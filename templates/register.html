@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,21 @@
     <title>Login App</title>
     <link rel="stylesheet" href="../static/css/register.css">
 </head>
+
 <body>
     <div class="container">
         <a href="./login.html">Back</a>
         <h1>Sign Up</h1>
-        <form id="register-form">
+        <form id="register-form" method="POST" action="/signup">
             <input type="text" name="username" id="username-field" class="register-form-field" placeholder="Username">
             <input type="mail" name="username" id="username-field" class="register-form-field" placeholder="Email">
-            <input type="password" name="password" id="password-field" class="register-form-field" placeholder="Password">
-            <input type="password" name="password" id="password-field" class="register-form-field" placeholder="Confirm Password">
-            <input type="submit" value="SIGN UP" id="register-form-submit">
-        </form>       
-    </div>  
+            <input type="password" name="password" id="password-field" class="register-form-field"
+                placeholder="Password">
+            <input type="password" name="password" id="password-field" class="register-form-field"
+                placeholder="Confirm Password">
+            <button type="submit" value="SIGN UP" id="register-form-submit">Sign Up</button>
+        </form>
+    </div>
 </body>
+
 </html>
