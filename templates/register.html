@@ -13,9 +13,16 @@
     <div class="container">
         <a href="./login.html">Back</a>
         <h1>Sign Up</h1>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="notification is-danger">
+            {{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">login page</a>.
+        </div>
+        {% endif %}
+        {% endwith %}
         <form id="register-form" method="POST" action="/signup">
             <input type="text" name="username" id="username-field" class="register-form-field" placeholder="Username">
-            <input type="mail" name="username" id="username-field" class="register-form-field" placeholder="Email">
+            <input type="mail" name="email" id="username-field" class="register-form-field" placeholder="Email">
             <input type="password" name="password" id="password-field" class="register-form-field"
                 placeholder="Password">
             <input type="password" name="password" id="password-field" class="register-form-field"

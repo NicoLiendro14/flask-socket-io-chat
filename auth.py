@@ -1,5 +1,9 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, flash, redirect, render_template, request, url_for
+from flask_sqlalchemy import SQLAlchemy
+from models import User
+from bcrypt import hashpw, checkpw, gensalt
 
+db = SQLAlchemy()
 
 auth = Blueprint('auth', __name__)
 
@@ -14,6 +18,27 @@ def signup():
     return render_template('register.html')
 
 
-@auth.route('/logout')
+@auth.route('/signup', methods=['POST'])
+def signup_post():
+    email = request.form.get('email')
+    username = request.form.get('username')
+    password = request.form.get('password')
+
+    user = User.query.filter_by(email=email).first()
+
+    if user:
+        flash('Email address already exists')
+        return redirect(url_for('auth.signup'))
+
+    hashed_password = hashpw(password.encode('utf-8'), gensalt())
+    new_user = User(email=email, username=username, password=hashed_password)
+
+    db.session.add(new_user)
+    db.session.commit()
+
+    return redirect(url_for('auth.login'))
+
+
+@ auth.route('/logout')
 def logout():
     return 'logout'
