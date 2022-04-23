@@ -15,7 +15,13 @@
         <h1>Login Account</h1>
 
         <div class="error">Contenedor de mensajes con errores</div>
-
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="notification is-danger">
+            {{ messages[0] }}
+        </div>
+        {% endif %}
+        {% endwith %}
         <form id="login-form" method="POST" action="/login">
             <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
             <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">

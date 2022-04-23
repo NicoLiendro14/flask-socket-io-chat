@@ -13,6 +13,25 @@ def login():
     return render_template('login.html')
 
 
+@auth.route('/')
+def index():
+    return render_template('client.html')
+
+
+@auth.route('/login', methods=['POST'])
+def login_post():
+    email = request.form.get('email')
+    password = request.form.get('password')
+
+    user = User.query.filter_by(email=email).first()
+
+    if not user or not checkpw(password.encode('utf-8'), user.password):
+        flash('Please check your login details and try again.')
+        return redirect(url_for('auth.login'))
+
+    return redirect(url_for('auth.index'))
+
+
 @auth.route('/signup')
 def signup():
     return render_template('register.html')
